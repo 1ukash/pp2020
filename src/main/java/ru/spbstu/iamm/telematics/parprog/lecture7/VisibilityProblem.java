@@ -2,7 +2,7 @@ package ru.spbstu.iamm.telematics.parprog.lecture7;
 
 public class VisibilityProblem {
 	
-	static int someVal = 0;
+	static volatile int someVal = 0;
 	
 	public static void main(String[] args) {
 		new Thread(new Runnable() {
